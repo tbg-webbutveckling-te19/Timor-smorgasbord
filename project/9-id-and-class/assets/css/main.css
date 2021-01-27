@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* . = class */
+.box {
+    width: 200px;
+    height: 200px;
+
+    background-color: midnightblue;
+}
+
+/* camel case */
+.emptySpace {
+    width: 200px;
+    height: 200px;
+}
+
+.roundedCorners {
+    border-radius: 7px;
+}

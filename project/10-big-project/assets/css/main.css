@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+body {
+    background-color: white;
+}
+
+/**************
+     Huvudsida
+**************/
+header {
+    height: 100px ;
+    width: 100%;
+    background-color: violet;
+}
+
+.undersida1 {
+    height: 250px;
+    width: 100%;
+    background-color: wheat;
+}
+
+section {
+    height: 50px;
+    width: 100%;
+    background-color: yellow;
+}
+
+.undersida2 {
+    height: 250px;
+    width: 100%;
+    background-color: lightblue;
+}
+
+.undersida1 a {
+    font-size: 230px;
+    margin-left: 25%;
+    text-decoration: none;
+    color: black;
+}
+
+.undersida2 a {
+    font-size: 230px;
+    margin-left: 30%;
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+
+/***************
+    Undersidor
+***************/
+
+.namn {
+    height: 100px;
+    width: 100%;
+}
+
+.parent {
+    height: 750px;
+    width: 100%;
+}
+
+.information {
+    height: 750px;
+    flex: 1;
+    background-color: aqua;
+}
+
+.information h1 {
+    font-size: xx-large;
+    margin-left: 25%;
+}
+
+.information a {
+    word-spacing: 3px;
+    line-height: 50px;
+}
+
+.överbild {
+    height: 750px;
+    flex: 1;
+    background-color: red;
+}
+
+.bilder {
+    height: 250px;
+    width: 100%;
+    background-color: red;
+}
+
+.karaktarer {
+    height: 500px;
+    width: 100%;
+    background-color: lightblue;
+}
+.namn h1 {
+    font-size: 100px;
+    margin-left: 40%;
+    margin-top: 0px;
+}
+
+.skadespelare {
+    height: 500px;
+    flex: 1;
+    background-color: lightblue;
+}
+
+
+/*************
+     Flex
+*************/
+
+.addflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

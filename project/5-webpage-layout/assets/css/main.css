@@ -1,0 +1,37 @@
+@charset "utf-8";
+body {
+    background-color: #D980FA;
+}
+
+header {
+    background-color: #ea91Fb;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: flex start; /*standard value */
+    align-items: stretch; /*standard value */
+    min-height: 500px;
+    margin-bottom: 20px;
+}
+
+.main-container nav {
+
+    flex: 1;
+    background-color: #ea91Fb;
+}
+
+.main-container main {
+
+    flex: 2;
+    background-color: #c870e9;
+}
+
+footer {
+    background-color: #FDA7DF;
+    height: 150px;
+    width: 100%;
+}

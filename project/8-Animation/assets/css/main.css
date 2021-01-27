@@ -1,0 +1,538 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #3B3B98;
+}
+
+.animationGallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+
+    width: 90vw;
+    min-height: 80vh;
+
+    background-color: #4e4ea2;
+
+    margin: auto;
+    padding: 20px 10px;
+}
+
+.parent {
+    width: 32%;
+    min-height: 300px;
+
+    border: 1px solid white;
+
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    color: snow;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+.child {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba( 0, 0, 0, .2);
+
+    padding: 5px;
+
+    position: relative;
+
+
+}
+
+
+/************
+border radius
+************/
+.br {
+    width: 150px;
+    height: 150px;
+
+    background-color: blueviolet;
+
+    margin: 5px;
+
+}
+.square, .circle {
+    transition: border-radius .4s ease;
+}
+
+.square:hover {
+    border-radius: 100%;
+}
+
+.circle {
+    border-radius: 100%;
+}
+
+.circle:hover {
+    border-radius: 0%;
+}
+
+
+
+
+
+/************
+translate
+************/
+
+.translate {
+    width: 75px;
+    height: 75px;
+
+    background-color: blueviolet;
+
+    margin: 5px;
+
+    transition: transform .4s ease-in-out;
+}
+
+.translate:nth-child(1):hover {
+    transform: translateX(10px);
+}
+
+.translate:nth-child(2):hover {
+    transform: translateY(10px);
+}
+
+.translate:nth-child(3):hover {
+    transform: translateX(-10px)
+}
+
+.translate:nth-child(4):hover {
+    transform: translateY(-10px);
+}
+
+.translate:nth-child(5):hover {
+    transform: translate(10px, 10px);
+}
+   
+
+
+
+
+/************
+    Delay
+************/
+.delay {
+    width: 50px;
+    height: 50px;
+
+    background-color: darkblue;
+
+    margin: 5px;
+
+    transition: transform 1s ease;
+}
+
+.child:hover .delay {
+    transform: translateX(300px);
+}
+
+.delay:nth-child(odd) {
+    background-color: cadetblue;
+    transition-delay: .4s;
+}
+
+.delay:nth-child(4) {
+    background-color: chartreuse;
+    transition-delay: .2s;
+}
+
+
+
+/************
+Color Change
+************/
+/************
+Color Change
+************/
+
+.colorChange {
+    width: 100%;
+    height: 75px;
+
+    background-color: #6a3b98;
+    margin: 15px 0px;
+
+
+}
+
+.colorChange h2{
+    text-shadow: 0px 0px 0px;
+}
+
+.changeBg {
+    transition: background-color .5s ease-in;
+}
+
+.changeBg:hover{
+    background-color: teal;
+}
+
+.changeText h2 {
+    transition: color .4s ease-in-out;
+}
+
+.changeText:hover h2 {
+    color: black;
+}
+
+.changeBorder {
+    border: 5px solid black;
+    transition: border-color .5s ease;
+}
+
+.changeBorder:hover {
+    border-color: cornflowerblue;
+}
+/************
+    opacity
+************/
+.Fade {
+    width: 75px;
+    height: 150px;
+
+    background-color: #6a3b98;
+    border: 0px solid black;
+
+    margin: 5px;
+    
+    transition: opacity .4s, border .4s;
+}
+
+.Fade:nth-child(1):hover {
+    opacity: 0;
+}
+
+.Fade h2 {
+    text-shadow: none;
+    opacity: 0;
+
+    transition: opacity .4s, border .4s;
+}
+
+.Fade:nth-child(2):hover h2 {
+    opacity: 1;
+}
+    
+.Fade:nth-child(3):hover {
+    border: 5px solid black;
+}
+
+
+
+
+/************
+    Scale
+************/
+.Scale {
+    width: 75px;
+    height: 150px;
+    background-color: blueviolet;
+    margin: 2px;
+    transition: transform .3s ease-in-out;
+}
+
+.Scale:nth-child(1):hover {
+    transform: scaleX(1.1);
+}
+.Scale:nth-child(2):hover {
+    transform: scaleY(1.5);
+}
+.Scale:nth-child(3):hover {
+    transform: scaleX(0.9);
+}
+.Scale:nth-child(4):hover {
+    transform: scaleY(0.5);
+}
+.Scale:nth-child(5):hover {
+    transform: scale(1.5);
+}
+
+
+
+
+
+
+
+/****************
+    Rotate
+****************/
+.Rotate {
+    width: 100px;
+    height: 100px;
+
+    margin: 3px;
+    background-color: blueviolet;
+
+    transition: transform .3s ease-out;
+}
+
+.Rotate:nth-child(1):hover {
+    transform: rotate(90deg);
+}
+
+.Rotate:nth-child(2):hover {
+    transform: rotate(-90deg);
+}
+
+.Rotate:nth-child(3) {
+    transition: all 6s ease;
+}
+.Rotate:nth-child(3):hover {
+    transform: rotate(100000deg) scale(1.5);
+    border-radius: 100%;
+}
+
+.Rotate:nth-child(4):hover {
+    transform: rotateX(180deg);
+}
+
+.Rotate:nth-child(5):hover {
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+/************
+    Box Shadow
+************/
+.shadow {
+    width: 100%;
+    height: 100%;
+
+}
+
+.shadow button {
+    width: 80%;
+    height: 50px;
+
+    background-color: black;
+    color: silver;
+
+    border-radius: 5px;
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+
+    transition: all .4s ease;
+}
+
+.btnShadow1:hover {
+    background-color: transparent;
+    box-shadow: 2px 2px 0px black;
+}
+
+.btnShadow2:hover {
+    background-color: transparent;
+    color: white;
+    box-shadow: 0px 45px 15px -16px black; /* x y blur spread color */
+}
+
+
+/**********************
+        Filter
+**********************/
+.filter1, 
+.filter2 {
+    width: 100px;
+    height: 100px;
+
+    background-image: url(../images/colors.jpg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    transition: filter .4s;
+
+    margin: 5px;
+}
+
+.filter1:nth-child(1) {
+    filter: grayscale(100%); /* 0% = unchanged, 100% = gray */
+}
+
+.filter1:nth-child(1):hover {
+    filter: grayscale(0%)
+}
+
+.filter1:nth-child(2) {
+    filter: blur(5px);
+}
+
+.filter1:nth-child(2):hover {
+    filter: blur(0px);
+}
+
+.filter1:nth-child(3) {
+    filter: brightness(50%);
+}
+
+.filter1:nth-child(3):hover {
+    filter: brightness(100%);
+}
+
+.filter2:nth-child(1) {
+    filter: contrast(50%);
+}
+
+.filter2:nth-child(1):hover {
+    filter: contrast(200%);
+}
+
+/* 0deg unchanged, between 0deg and 360deg change the colo, above wraps around */
+.filter2:nth-child(2) {
+    filter: hue-rotate(0deg);
+}
+
+.filter2:nth-child(2):hover {
+    filter: hue-rotate(360deg);
+}
+
+.filter2:nth-child(3) {
+    filter: invert(0%);
+}
+
+.filter2:nth-child(3):hover {
+    filter: invert(100%);
+}
+
+
+/*************
+BG animation
+*************/
+.bgAnimation {
+    animation: bgChange 5s alternate infinite;
+}
+
+@keyframes bgChange {
+    from {
+        background-color: yellow;
+    }
+    to {
+        background-color: violet;
+    }
+}
+/****************
+squareAnimation
+****************/
+.squareAnimation {
+    width: 100px;
+    height: 100px;
+
+    background-color: blueviolet;
+
+    border: 1px solid black;
+
+    animation: squareAnimation 5s alternate infinite;
+}
+
+@keyframes squareAnimation {
+    from {
+        top: 0;
+        left: 0;
+    }
+    to {
+        top: 100px;
+        left: 100px;
+    }
+}
+
+/*********************
+move around animation
+*********************/
+.moveAround {
+    width: 100px;
+    height: 100px;
+
+    background-color: coral;
+
+    animation: moveAround 3s infinite;
+}
+
+@keyframes moveAround {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    20% {
+        transform: translate(100px, 0px);
+    }
+    40% {
+        transform: translate(100px, 100px);
+    }
+    60% {
+        transform: translate(-100px, 100px);
+    }
+    80% {
+        transform: translate(-100px, 0px);
+    }
+}
+/*****************
+image slider
+*****************/
+.imgSlider {
+    animation: imageslider 5s infinite;
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes imageslider {
+    0%, 100% {
+        background-image: url(../images/clouds.jpg.jpg);
+    }
+    20% {
+        background-image: url(../images/color.jpg);
+    }
+    40% {
+        background-image: url(../images/konfetti.jpg.jpg);
+
+    }
+    60% {
+        background-image: url(../images/rosa.jpg.jpg);
+    }
+    80% {
+        background-image: url(../images/colors.jpg.jpg);
+    }
+}
+/*******************
+ghost
+*******************/
+
+img {
+    width: 50%;
+    animation: spooky 5s infinite;
+}
+
+@keyframes spooky {
+    50% {
+        transform: translateY(30px);
+    }
+}
+
+
+/************
+reusable
+************/
+
+.addFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addBorder {
+    border: 1px solid black;
+}

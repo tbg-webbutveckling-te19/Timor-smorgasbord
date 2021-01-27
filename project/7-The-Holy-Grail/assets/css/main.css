@@ -1,0 +1,41 @@
+@charset "UTF-8";
+body {
+    background-color: #3c40c6;
+}
+
+header {
+    background-color: #575fcf;
+    width: 100%;
+    height: 150px;
+}
+
+nav {
+    background-color: #0f26f9;
+    width: 100%;
+    height: 75px;
+}
+
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    min-height: 350px;
+}
+
+main section {
+    background-color: #4b57fa;
+    flex: 5;
+    height: 750px;
+}
+
+main aside {
+    background-color: #0056d8;
+    flex: 1;
+    height: 750;
+}
+
+footer {
+    background-color: #3488e7;
+    width: 100%;
+    height: 150px;
+}

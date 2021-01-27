@@ -1,0 +1,21 @@
+@charset "UTF-8";
+body {
+    background-color: crimson;
+}
+main {
+    background-color: crimson;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+main section {
+    background-color: coral;
+    height: 300px;
+    width: 250px;
+}
+
+main section a {
+    font-size: 25px;
+}
