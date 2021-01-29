@@ -3,13 +3,17 @@
     <head>
         <meta charset="utf-8">
         <meta description="här förklara man sidans innehåll...">
-        <title>Animation</title>
+        <title>Id & class</title>
         <link href="assets/css/main.css" rel="stylesheet">
     </head>
     <body>
-        <section class="box"></section>
-        <section class="emptySpace"></section>
-        <section class="box roundedCorners"></section>
-        <section class="Hello git"></section>
+        <!-- class = reusable -->
+        <section class="box m-1 rounded-5"></section>
+        <section class="box m-1"></section>
+        <section class="box m-1"></section>
+        <section class="box m-1 rounded-10"></section>
+
+        <!-- Id = only one time in same document -->
+        <section id="unique" class="m-1 rounded-10"></section>
     </body>
 </html>
