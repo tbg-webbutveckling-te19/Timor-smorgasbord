@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+::selection {
+    background-color: #f3005d;
+    color: #fff;
+}
+
+header {
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+header h1 {
+    order: 2;
+    flex: 0;
+    margin-top: -70px;
+    font-size: 60px;
+}
+
+.span-logo {
+    color: #f3005d;
+}
+
+nav {
+    width: 100vw;
+    order: 1;
+    flex: 0;
+}
+
+main {
+    flex-direction: column;
+    min-height: 1000px;;
+}
+
+.main-left {
+    order: 2;
+    border-bottom: 2px solid #DFDFDF;
+}
+
+.main-center {
+    order: 1;
+    flex: 3;
+}
+
+.main-right {
+    order: 3;
+}
+

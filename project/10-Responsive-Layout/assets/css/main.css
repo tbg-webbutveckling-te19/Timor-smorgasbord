@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    width: 100%;
+    height: 250px;
+
+    padding: 0px 200px; /* two values = top/bottom left/right */
+
+    background-color: #DFDFDF;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    flex: 1;
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.span-logo {
+    color: #007AF3;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+input {
+    display: none;
+}
+
+nav {
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    justify-content: space-evenly;
+    font-size: 22px;
+}
+
+nav li {
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    min-height: 800px;
+}
+
+.main-left, .main-right {
+    background-color: #637692;
+    flex: 1;
+}
+
+.main-center {
+    background-color: #5F6C7E;
+    flex: 4;
+}
+
+footer {
+    width: 100%;
+    height: 250px;
+
+    background-color: #3E4043;
+}
+
+/* Utility Classes */
+
+.addFlex {
+    display: flex;
+}
+
+.active {
+    font-weight: bold;
+}

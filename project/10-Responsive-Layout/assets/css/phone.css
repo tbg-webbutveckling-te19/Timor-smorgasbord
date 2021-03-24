@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    padding-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.span-logo {
+    color: #00f365;
+}
+
+.mobile-menu-icon {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 20px;
+    cursor: pointer;
+}
+.mobile-menu {
+    display: block;
+    margin-top: 70px;
+    padding: 10px;
+    width: 40%;
+    margin-left: 700px;
+    transition: all .4s;
+}
+
+#checkbox-hack:checked ~ .mobile-menu {
+    margin-left: 300px;
+} 
+
+.mobile-menu ul {
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-menu li {
+    border-bottom: 1px solid black;
+}
+
+nav {
+    display: none;
+}

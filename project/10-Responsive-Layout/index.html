@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/tablet.css" media="screen and (max-width: 950px)">
+    <link rel="stylesheet" href="assets/css/phone.css" media="screen and (max-width: 500px)">
+</head>
+<body>
+    <div class="container">
+        <header class="addFlex">
+            <h1>My<span class="span-logo">Logo.</span></h1>
+            <label for="checkbox-hack"><img src="assets/images/Icon awesome-hamburger.svg" alt="menu icon" class="mobile-menu-icon"></label>
+            <input type="checkbox" id="checkbox-hack">
+            <nav class="mobile-menu">
+                <ul class="addFlex">
+                    <li class="active">Start</li>
+                    <li>About</li>
+                    <li>Pricing</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="addFlex">
+                    <li class="active">Start</li>
+                    <li>About</li>
+                    <li>Pricing</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
+        <main class="addFlex">
+            <aside class="main-left"></aside>
+            <section class="main-center"></section>
+            <aside class="main-right"></aside>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>

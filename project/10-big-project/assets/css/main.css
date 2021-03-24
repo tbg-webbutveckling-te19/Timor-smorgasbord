@@ -10,25 +10,30 @@ body {
 header {
     height: 100px ;
     width: 100%;
-    background-color: violet;
+    background-color: #485460
+}
+header h1 {
+    font-size: 60px;
+    margin-left: 40%;
+    color: #ecf0f1
 }
 
 .undersida1 {
     height: 250px;
     width: 100%;
-    background-color: wheat;
+    background-color: #d2dae2;
 }
 
 section {
     height: 50px;
     width: 100%;
-    background-color: yellow;
+    background-color: #485460;
 }
 
 .undersida2 {
     height: 250px;
     width: 100%;
-    background-color: lightblue;
+    background-color: #d2dae2;
 }
 
 .undersida1 a {
@@ -46,9 +51,19 @@ section {
 }
 
 footer {
-    height: 100px;
+    height: 200px;
     width: 100%;
-    background-color: aliceblue;
+    background-color: #485460;
+}
+
+footer h1 {
+    color: white;
+    margin-left: 45%;
+}
+
+footer a {
+    color: white;
+    margin-left: 46%;
 }
 
 
@@ -69,7 +84,7 @@ footer {
 .information {
     height: 750px;
     flex: 1;
-    background-color: aqua;
+    background-color: #d2dae2;
 }
 
 .information h1 {
@@ -85,19 +100,19 @@ footer {
 .överbild {
     height: 750px;
     flex: 1;
-    background-color: red;
+    background-color: #d2dae2;
 }
 
 .bilder {
     height: 250px;
     width: 100%;
-    background-color: red;
+    background-color: #485460;
 }
 
 .karaktarer {
     height: 500px;
     width: 100%;
-    background-color: lightblue;
+    background-color: #d2dae2;
 }
 .namn h1 {
     font-size: 100px;
@@ -108,7 +123,7 @@ footer {
 .skadespelare {
     height: 500px;
     flex: 1;
-    background-color: lightblue;
+    background-color: #d2dae2;
 }
 
 
